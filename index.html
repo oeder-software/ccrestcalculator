@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" />
-  <title>oeder-software</title>
-  <div>
-  </div>
- 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Georg Christian Oeder nad Family tree of Nicolai Gottfried Oeder ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main {
+            margin-top: 10px;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+
+        @media(max-width: 800px) {
+            main {
+                margin-top: 15px;
+            }
+        }
+    </style>
+    <title id="title">home</title>
 </head>
+
 <body>
-Text is comnig soon index
+    <header> <iframe id="frameindex" class="frame" src="header.html" frameborder="0" scrolling="no"> </iframe>
+    </header>
+
+    <nav class="navbar">
+        <ul class="list">
+
+            <li class="listelement"><a id="home" href="indexen.html">Home</a></li>
+            <li class="listelement"><a id="ccrest" href="ccrest.html">CC Rest Calculator</a></li>
+
+            <li class="menubut" id="menubut" onclick="showSidebar(); return false"><a href=""><img
+                        src="./img/menubut1.png" alt="menu" width="20px" height="20px"></a></li>
+        </ul>
+        <ul class="sidebar">
+            <p onclick="closeSidebar();" id="closebut"><img id="closebut" src="./img/closebut.png" alt="close menu"
+                    width="30px" height="30px" style="color: black;"></p>
+            <li onclick="closeSidebar();"><a id="homem" href="">Home</a></li>
+            <li onclick="closeSidebar();"><a id="ccrest" href="ccrest.html">CC Rest Calculator</a></li>
+        </ul>
+    </nav>
+    <div class="main" onclick="closeSidebar();">
+        <main>
+
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>
+                            Cabin crew rest calculator is now available in Appstore.
+                        </h2>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+
+                            For the time beeing only for iphone. And only IOS 11 or newer.
+                            Android app is in the pipeline, and will be comming soon.
+                        </h3>
+                    </td>
+                    <td rowspan="2">
+                        <img src="/img/3px.png" alt="rest calculator" width="250px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            Download Cabin crew rest calculator here from Appstore:
+                            <br>
+                            <a href="                        https://apps.apple.com/us/app/cabin-crew-rest-calculator/id6479193850?platform=iphone
+">
+                                <h2>Download it here</h2>
+                            </a>
+                        </h3>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+
+        </main>
+    </div>
+    <footer> <iframe id="framefooter" src="footer.html" frameborder="2" scrolling="no"> </iframe>
+    </footer>
+    <script src="pagescript.js"></script>
+    <script src="navbarscript.js"></script>
 </body>
+
+</html>
